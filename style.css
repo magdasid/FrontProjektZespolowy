@@ -1,3 +1,13 @@
+/*  informacje:
+    tło: white
+    czcionka: narazie Arial
+    niebieski kolor z logo: #00d2ff
+    inne użyte kolory: 
+    napisy menu, kategorie, wynagrodzenia, nagłowek "Ogłoszenia" - black, 
+    tło w ogłoszeniu - lightgray, 
+    nagłowki ogłoszeń - #006880, 
+    ogłoszenie (kto wystawia, data) - #818181
+*/
 body{
 	margin: 0px;
 	padding: 0px;
