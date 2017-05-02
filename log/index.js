@@ -10,13 +10,11 @@ function sign_up() {
     $(".forgot").hide();
     
     $('.ul li').click(function(){
-    $('.ul li').removeClass('active');
-
-    $(this).addClass('active');
-
-});
-
+        $('.ul li').removeClass('active');
+        $(this).addClass('active');
+    });
 }
+
 function forgot() {
     $(".signin").hide();
     $(".signup").hide();
@@ -24,7 +22,6 @@ function forgot() {
 }
 
 window.onload = function(){
-    
     $(".signup").hide();
     $(".signin").show();
     $(".forgot").hide();
