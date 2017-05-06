@@ -14,7 +14,6 @@ function sign_up() {
         $(this).addClass('active');
     });
 }
-
 function forgot() {
     $(".signin").hide();
     $(".signup").hide();
