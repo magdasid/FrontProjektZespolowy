@@ -9,59 +9,8 @@
         <script src="jquery-1.12.3.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<script>
-			$(document).ready(function() {
-				$(".salary").hide();
-				$("#line2").hide();
-				$('input[type=range]').on('input', function(e){
-				  var min = e.target.min,
-					  max = e.target.max,
-					  val = e.target.value;
-				  
-				  $(e.target).css({
-					'backgroundSize': (val - min) * 100 / (max - min) + '% 100%'
-				  });
-				}).trigger('input');
-				
-					var val1 = $('input[name=range-min]').val();
-					document.getElementById("range-min").innerHTML = val1+" zł";
-					
-					var val2 = $('input[name=range-max]').val();
-					document.getElementById("range-max").innerHTML = val2+" zł";
-			});
-			
-			function showMin(newValue)
-			{
-				document.getElementById("range-min").innerHTML=newValue+" zł";
-			}
-			function showMax(newValue)
-			{
-				document.getElementById("range-max").innerHTML=newValue+" zł";
-			}
-            
-			function showCategoryView()
-			{
-				$(".salary").hide();
-				$("#nav_salary").removeClass("bold");
-				$("#nav_category").addClass("bold");
-				$("#line2").hide();
-				$("#line1").show();
-				$(".category").show(1000);
-				//$(".salary").show(1000);
-			}
-			function showSalaryView()
-			{
-				$(".category").hide();
-				$("#nav_category").removeClass("bold");
-				$("#nav_salary").addClass("bold");
-				$("#line1").hide();
-				$("#line2").show();
-				$(".salary").show(1000);
-				//$(".salary").show(1000);
-			}
-            
-		</script>
+		<link rel="stylesheet" type="text/css" href="mainpage.css">
+        <script src="main.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -71,22 +20,24 @@
 				</div>
 				<div class="nav_btns">
 					<ul>
-						<li class="">
-							<a href="#">
-								<i class="fa fa-user-o" aria-hidden="true"></i>
-								moje konto
-							</a>
-						</li>
-						<li class="">
-							<a href="#">
-								<i class="fa fa-plus-square-o" aria-hidden="true"></i>
-								dodaj ogłoszenie 
-							</a>
+                        
+						<li class="dropdown">
+							<a href="#" class="dropbtn"><i class="fa fa-user-o" aria-hidden="true"></i>moje konto</a>
+                            <div class="dropdown-content">
+                                <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>moje dane</a>
+                                <a href="#"><i class="fa fa-list-alt" aria-hidden="true"></i>moje ogłoszenia</a>
+                                <a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i>wiadomości</a>
+                                <a href="#"><i class="fa fa-power-off" aria-hidden="true"></i>wyloguj się</a>
+                            </div>
+                        </li>
+                        <li class="">
+							<a href="#"><i class="fa fa-plus-square-o" aria-hidden="true"></i>dodaj ogłoszenie </a>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<div class="search-main">
+            <div class="content">
+                  <div class="search-main">
 				<div class="wrapper">
 					<div class="search-input">
 						<input type="text" name="phrase" id="search-phrase" placeholder="Czego szukasz?">
@@ -315,6 +266,7 @@
 					</div>
 				</div>
 			</div>
+            </div>
             <div class="footer">
                <div class="footer_nav">
 					<ul>

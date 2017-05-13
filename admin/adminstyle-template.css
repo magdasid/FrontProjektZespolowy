@@ -1,7 +1,8 @@
+/* main admin styles */
 body {
     margin: 0;
     font-family: Arial;
-		background-color: #fafafa;
+    background-color: #fafafa;
 }
 .label {
     height: 40px;
@@ -12,10 +13,9 @@ body {
 	position: fixed;
 	top: 0;
 	border-bottom: 1px solid #eeeeee;
-
--webkit-box-shadow: -3px 5px 5px 4px rgba(251,251,251,1);
--moz-box-shadow: -3px 5px 5px 4px rgba(251,251,251,1);
-box-shadow: -3px 5px 5px 4px rgba(251,251,251,1);
+    -webkit-box-shadow: -3px 5px 5px 4px rgba(251,251,251,1);
+    -moz-box-shadow: -3px 5px 5px 4px rgba(251,251,251,1);
+    box-shadow: -3px 5px 5px 4px rgba(251,251,251,1);
 }
 .logo-img {
     width: 60%;
@@ -94,6 +94,7 @@ div.content {
 		position: relative;
 	}
 }
+
 @media screen and (max-width: 400px) {
     ul.sidenav li a {
         text-align: center;
@@ -111,64 +112,4 @@ div.content {
 		line-height: 2;
 		font-size: 10px;
 	}
-
-
-}
-
-
-
-
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-  color: #4a4a4d;
-  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-th,
-td {
-  padding: 10px 15px;
-  vertical-align: middle;
-}
-thead {
-  background: #395870;
-  color: #fff;
-}
-th {
-  font-weight: bold;
-}
-th:first-child {
-  text-align: left;
-}
-tbody tr:nth-child(even) {
-  background: #f0f0f2;
-}
-td {
-  border-bottom: 1px solid #cecfd5;
-  border-right: 1px solid #cecfd5;
-}
-td:first-child {
-  border-left: 1px solid #cecfd5;
-}
-.book-title {
-  color: #395870;
-  display: block;
-}
-.item-stock,
-.item-qty {
-  text-align: center;
-}
-.item-price {
-  text-align: right;
-}
-.item-multiple {
-  display: block;
-}
-tfoot {
-  text-align: right;
-}
-tfoot tr:last-child {
-  background: #f0f0f2;
-}
-.container {
-	padding-top: 50px;
 }
