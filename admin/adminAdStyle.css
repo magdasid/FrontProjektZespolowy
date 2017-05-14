@@ -174,9 +174,6 @@ tfoot {
 tfoot tr:last-child {
   background: #f0f0f2;
 }
-.container {
-	padding-top: 50px;
-}
 div.btn {
 	text-decoration: none;
 	padding: 4px 6px 4px 6px;
@@ -207,8 +204,8 @@ input {
 	border: none;
 }
 /*advertisment style */
-#ads-list {
-	
+.edit-btn {
+	cursor: pointer;
 }
 .delete-span {
 	font-family: Arial;
