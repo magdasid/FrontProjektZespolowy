@@ -7,60 +7,6 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="adminAdStyle.css">
-      <script>
-         function myFunction() {
-           var input, filter, table, tr, td, i;
-           input = document.getElementById("myInput");
-           filter = input.value.toUpperCase();
-           table = document.getElementById("ads-list");
-           tr = table.getElementsByTagName("tr");
-          
-           for (i = 1; i < tr.length; i++) {
-         	for (var j = 0; j < table.rows[i].cells.length; j++) {
-         		td = tr[i].cells[j];
-         		if (td) {
-         		  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-         			tr[i].style.display = "";
-         			break;
-         		  } else {
-         			tr[i].style.display = "none";
-         		  }
-         		} 
-         	  }
-         	}
-         }
-         function editState(element) {
-         debugger;
-         	if(element.innerText == "Edytuj") {
-         		element.innerText = "Zapisz"; 
-         		var parentofSelected = element.parentNode; // gives the parent DIV
-         		var children = parentofSelected.childNodes;
-         		for (var i=0; i < children.length; i++) {
-         			if (children[i].tagName = "input") {
-         				children[i].readOnly = false;
-         				children[i].style.backgroundColor = 'white';
-         				children[i].style.border = '1px solid #cecfd5';
-         				//myValue.readOnly = false;
-         				break;
-         			}
-         		}
-         	}
-         	else {
-         		element.innerText = "Edytuj"; 
-         		var parentofSelected = element.parentNode; // gives the parent DIV
-         		var children = parentofSelected.childNodes;
-         		for (var i=0; i < children.length; i++) {
-         			if (children[i].tagName = "input") {
-         				children[i].readOnly = false;
-         				children[i].style.backgroundColor = 'inherit';
-         				children[i].style.border = 'none';
-         				//myValue.readOnly = false;
-         				break;
-         			}
-         		}
-         	}
-         }
-      </script>
    </head>
    <body>
       <div class="admin_container">
@@ -85,19 +31,19 @@
                </a>
             </li>
             <li>
-               <a href="#news">
+               <a href="adminlist.html">
                <i class="fa fa-user-circle" aria-hidden="true"></i>
-               Admini
+               Administratorzy
                </a>
             </li>
             <li>
-               <a href="#contact">
+               <a href="admincategories.html">
                <i class="fa fa-th-list" aria-hidden="true"></i>
                Kategorie
                </a>
             </li>
             <li>
-               <a href="#about">
+               <a href="adminusers.html">
                <i class="fa fa-users" aria-hidden="true"></i>
                Użytkownicy
                </a>
@@ -109,13 +55,13 @@
                </a>
             </li>
             <li>
-               <a href="#about">
+               <a href="access.html">
                <i class="fa fa-th" aria-hidden="true"></i>
                Dostęp
                </a>
             </li>
             <li>
-               <a href="#about">
+               <a href="adminactions.html">
                <i class="fa fa-arrows" aria-hidden="true"></i>
                Akcje
                </a>
@@ -124,7 +70,6 @@
          <div class="content">
             <div class="container">
 				<h2>Lista ogłoszeń</h2>
-               <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Wpisz wyszukuiwaną frazę">
                <table id="ads-list">
                   <thead>
                      <tr>
@@ -154,6 +99,9 @@
                         </th>
                         <th scope="col">
                            status
+                        </th>
+						<th scope="col">
+                           edytuj
                         </th>
                         <th scope="col">
                            delete
@@ -185,12 +133,19 @@
 							<td class="date">
 							   20-04-2017
 							</td>
-							<td class="status"><input type="text" placeholder="0" class="edit-input" readonly>
-							   <span class="edit-btn" onclick="editState(this);" >
-							   Edytuj
-							   </span>
+							<td class="status">
+							   0
 							</td>
-							<td class="delete">
+							<td class="edit">
+								<div class="btn">
+								  <i class="fa fa-pencil" aria-hidden="true"></i>
+									  <span class="edit-span">
+									  Edytuj
+									  </span>
+								  </i>
+								</div>
+							</td>
+							<td class="delete btn-col">
 							   <div class="btn">
 								  <i class="fa fa-times" aria-hidden="true">
 									  <span class="delete-span">
@@ -224,12 +179,19 @@
 							<td class="date">
 							   04-04-2017
 							</td>
-							<td class="status"><input type="text" placeholder="0" class="edit-input" readonly>
-							   <span class="edit-btn" onclick="editState(this);" >
-							   Edytuj
-							   </span>
+							<td class="status">
+							   0
 							</td>
-							<td class="delete">
+							<td class="edit">
+								<div class="btn">
+								  <i class="fa fa-pencil" aria-hidden="true"></i>
+									  <span class="edit-span">
+									  Edytuj
+									  </span>
+								  </i>
+								</div>
+							</td>
+							<td class="delete btn-col">
 							   <div class="btn">
 								  <i class="fa fa-times" aria-hidden="true">
 									  <span class="delete-span">
@@ -238,6 +200,7 @@
 								  </i>
 							   </div>
 							</td>
+						</tr>
 						</tr>
 						<tr>
 							<td class="ad-id">
@@ -263,12 +226,19 @@
 							<td class="date">
 							   08-04-2017
 							</td>
-							<td class="status"><input type="text" placeholder="0" class="edit-input" readonly>
-							   <span class="edit-btn" onclick="editState(this);" >
-							   Edytuj
-							   </span>
+							<td class="status">
+							   0
 							</td>
-							<td class="delete">
+							<td class="edit">
+								<div class="btn">
+								  <i class="fa fa-pencil" aria-hidden="true"></i>
+									  <span class="edit-span">
+									  Edytuj
+									  </span>
+								  </i>
+								</div>
+							</td>
+							<td class="delete btn-col">
 							   <div class="btn">
 								  <i class="fa fa-times" aria-hidden="true">
 									  <span class="delete-span">
@@ -277,6 +247,7 @@
 								  </i>
 							   </div>
 							</td>
+						</tr>
 						</tr>
 						<tr>
 							<td class="ad-id">
@@ -302,12 +273,19 @@
 							<td class="date">
 							   17-04-2017
 							</td>
-							<td class="status"><input type="text" placeholder="0" class="edit-input" readonly>
-							   <span class="edit-btn" onclick="editState(this);" >
-							   Edytuj
-							   </span>
+							<td class="status">
+							   0
 							</td>
-							<td class="delete">
+							<td class="edit">
+								<div class="btn btn-col">
+								  <i class="fa fa-pencil" aria-hidden="true"></i>
+									  <span class="edit-span">
+									  Edytuj
+									  </span>
+								  </i>
+								</div>
+							</td>
+							<td class="delete btn-col">
 							   <div class="btn">
 								  <i class="fa fa-times" aria-hidden="true">
 									  <span class="delete-span">
@@ -316,6 +294,7 @@
 								  </i>
 							   </div>
 							</td>
+						</tr>
 						</tr>
 					</tbody>
                </table>

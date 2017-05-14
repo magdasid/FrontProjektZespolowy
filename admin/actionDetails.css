@@ -192,35 +192,5 @@ a.btn .fa {
 div.btn:hover {
 	background-color: #2C3C55;
 }
-input {
-	padding: 5px;
-}
-.edit-input {
-	padding: 0px;
-	width: 20px;
-	padding: 1px 2px 1px 2px;
-	margin-right: 5px;
-	background-color: inherit;
-	box-shadow: none;
-	border: none;
-}
+
 /*advertisment style */
-.edit-btn {
-	cursor: pointer;
-}
-.delete-span {
-	font-family: Arial;
-}
-.ad-id {
-	width: 5px;
-}
-.date {
-	width: 80px;
-}
-.status {
-	width: 5px;
-	text-align: center;
-}
-.edit, .delete {
-	width: 100px;
-}

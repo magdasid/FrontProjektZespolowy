@@ -224,3 +224,6 @@ input {
 .edit, .delete {
 	width: 100px;
 }
+.add-btn {
+	width: 200px;
+}

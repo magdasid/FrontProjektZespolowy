@@ -204,23 +204,4 @@ input {
 	box-shadow: none;
 	border: none;
 }
-/*advertisment style */
-.edit-btn {
-	cursor: pointer;
-}
-.delete-span {
-	font-family: Arial;
-}
-.ad-id {
-	width: 5px;
-}
-.date {
-	width: 80px;
-}
-.status {
-	width: 5px;
-	text-align: center;
-}
-.edit, .delete {
-	width: 100px;
-}
+/*users list style */
