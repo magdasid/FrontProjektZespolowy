@@ -388,7 +388,7 @@ input[type=range]::-moz-range-thumb {
 }
 .list-short .list-content {
 	float: left;
-	width: 80%;
+	width: 100%;
 }
 .list-container {
     height: auto;
