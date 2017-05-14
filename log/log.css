@@ -19,7 +19,7 @@ body {
     width: 44%;
     float: left;
     background-image: linear-gradient(-190deg, #FFFFFF 8%, #EEF3F5 100%);
-    transition: all 0.1s;
+    //transition: all 0.3s;
 }
 .form_container{
     margin: 0;
