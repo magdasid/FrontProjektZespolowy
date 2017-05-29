@@ -6,24 +6,33 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="actionDetails.css">
+      <link rel="stylesheet" type="text/css" href="actionDetailsStyle.css">
    </head>
    <body>
       <div class="admin_container">
          <div class="label">
-            <div  class="logo-img">
+            <div class="logo-img">
                <img src="logo.png" alt="img1">
             </div>
-            <div class="admin-info">
-               <div id="admin-name">
-                  Natalia Kurek
-               </div>
-               <div class="admin-icon">
-                  <i class="fa fa-user-circle" aria-hidden="true"></i>
-               </div>
-            </div>
-         </div>
+             <div class="admin-logout">
+                 <a href="#"><i class="fa fa-power-off" aria-hidden="true"></i> wyloguj się</a>
+             </div>
+          </div>
          <ul class="sidenav">
+             <div id="admin-info">
+                 <div id="icon">
+                     <i class="fa fa-user-circle" aria-hidden="true"></i>
+                 </div>
+                 Natalka
+                 <div id="info">
+                     <label>
+                         admin
+                     </label>
+                 </div>
+                 <div class="admin-logout2">
+                     <a href="#"><i class="fa fa-power-off" aria-hidden="true"></i> wyloguj się</a>
+                 </div>
+             </div> 
              <li>
                <a href="#home">
                <i class="fa fa-home" aria-hidden="true"></i>
@@ -31,25 +40,25 @@
                </a>
             </li>
             <li>
-               <a href="adminlist.html">
+               <a href="admin.html">
                <i class="fa fa-user-circle" aria-hidden="true"></i>
                Administratorzy
                </a>
             </li>
             <li>
-               <a href="admincategories.html">
+               <a href="categories.html">
                <i class="fa fa-th-list" aria-hidden="true"></i>
                Kategorie
                </a>
             </li>
             <li>
-               <a href="adminusers.html">
+               <a href="users.html">
                <i class="fa fa-users" aria-hidden="true"></i>
                Użytkownicy
                </a>
             </li>
             <li>
-               <a href="advertisment.html">
+               <a href="advertisments.html">
                <i class="fa fa-file-text-o" aria-hidden="true"></i>
                Ogłoszenia
                </a>
@@ -61,7 +70,7 @@
                </a>
             </li>
             <li>
-               <a href="adminactions.html" class="active">
+               <a href="actions.html" class="active">
                <i class="fa fa-arrows" aria-hidden="true"></i>
                Akcje
                </a>

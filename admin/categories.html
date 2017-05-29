@@ -6,24 +6,33 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="adminusers.css">    
+      <link rel="stylesheet" type="text/css" href="categoriesStyle.css">    
    </head>
    <body>
       <div class="admin_container">
          <div class="label">
-            <div  class="logo-img">
+            <div class="logo-img">
                <img src="logo.png" alt="img1">
             </div>
-            <div class="admin-info">
-               <div id="admin-name">
-                  Madzia
-               </div>
-               <div class="admin-icon">
-                  <i class="fa fa-user-circle" aria-hidden="true"></i>
-               </div>
-            </div>
-         </div>
+             <div class="admin-logout">
+                 <a href="#"><i class="fa fa-power-off" aria-hidden="true"></i> wyloguj się</a>
+             </div>
+          </div>
         <ul class="sidenav">
+            <div id="admin-info">
+                     <div id="icon">
+                         <i class="fa fa-user-circle" aria-hidden="true"></i>
+                     </div>
+                     Natalka
+                     <div id="info">
+                         <label>
+                             admin
+                         </label>
+                     </div>
+                     <div class="admin-logout2">
+                        <a href="#"><i class="fa fa-power-off" aria-hidden="true"></i> wyloguj się</a>
+                    </div>
+                 </div> 
              <li>
                <a href="#home">
                <i class="fa fa-home" aria-hidden="true"></i>
@@ -31,25 +40,25 @@
                </a>
             </li>
             <li>
-               <a href="adminlist.html" >
+               <a href="admin.html">
                <i class="fa fa-user-circle" aria-hidden="true"></i>
                Administratorzy
                </a>
             </li>
             <li>
-               <a href="admincategories.html">
+               <a href="categories.html" class="active">
                <i class="fa fa-th-list" aria-hidden="true"></i>
                Kategorie
                </a>
             </li>
             <li>
-               <a href="adminusers.html" class="active">
+               <a href="users.html">
                <i class="fa fa-users" aria-hidden="true"></i>
                Użytkownicy
                </a>
             </li>
             <li>
-               <a href="advertisment.html">
+               <a href="advertisments.html">
                <i class="fa fa-file-text-o" aria-hidden="true"></i>
                Ogłoszenia
                </a>
@@ -61,7 +70,7 @@
                </a>
             </li>
             <li>
-               <a href="adminactions.html">
+               <a href="actions.html">
                <i class="fa fa-arrows" aria-hidden="true"></i>
                Akcje
                </a>
@@ -69,24 +78,25 @@
          </ul>
          <div class="content">
             <div class="container">
-				<h2>Lista użytkowników</h2>
+				<h2>Lista kategorii</h2>
+                <div class="btn add-btn">
+					<i class="fa fa-plus" aria-hidden="true"></i>
+						<span class="add-span">
+                            <a href="addCategory.html">Dodaj kategorie</a>
+						</span>
+					</i>
+				</div>
                <table id="ads-list">
                   <thead>
                      <tr>
                         <th scope="col">
-                           user id
+                           category id
                         </th>
                         <th scope="col">
-                           first name
+                           name
                         </th>
                         <th scope="col">
-                           last name
-                        </th>
-                         <th scope="col">
-                           email
-                        </th>
-                         <th scope="col">
-                           status
+                           description
                         </th>
                          <th scope="col">
                            edit
@@ -98,20 +108,14 @@
                   </thead>
 					<tbody>
 						<tr>
-							<td class="user-id">
+							<td class="cat-id">
 							   1
 							</td>
-							<td class="user-firstname">
-							   John
+							<td class="cat-name">
+							   Lorem ipsum
 							</td>
-							<td class="user-lastname">
-							   Smith
-							</td>
-                            <td class="user-email">
-							   johnsmith@gmail.com
-							</td>
-                            <td class="user-status">
-							   0
+							<td class="cat-description">
+							   Lorem ipsum
 							</td>
                             <td class="edit">
 							   <div class="btn">
@@ -133,55 +137,14 @@
 							</td>
 						</tr>
 						 <tr>
-							<td class="user-id">
+							<td class="cat-id">
 							   2
 							</td>
-							<td class="user-firstname">
-							   Leonardo
+							<td class="cat-name">
+							   Lorem ipsum
 							</td>
-							<td class="user-lastname">
-							   DiCaprio
-							</td>
-                            <td class="user-email">
-							   leooodicaprio@gmail.com
-							</td>
-                            <td class="user-status">
-							   1
-							</td>
-                             <td class="edit">
-							   <div class="btn">
-								  <i class="fa fa-pencil" aria-hidden="true">
-									  <span class="delete-span">
-									  Edytuj
-									  </span>
-								  </i>
-							   </div>
-							</td>
-							<td class="delete">
-							   <div class="btn">
-								  <i class="fa fa-times" aria-hidden="true">
-									  <span class="delete-span">
-									  Usuń
-									  </span>
-								  </i>
-							   </div>
-							</td>
-						</tr>
-                        <tr>
-							<td class="user-id">
-							   3
-							</td>
-							<td class="user-firstname">
-							   Ryan
-							</td>
-							<td class="user-lastname">
-							   Gosling
-							</td>
-                            <td class="user-email">
-							   rgosling@gmail.com
-							</td>
-                            <td class="user-status">
-							   0
+							<td class="cat-description">
+							   Lorem ipsum
 							</td>
                             <td class="edit">
 							   <div class="btn">
@@ -203,20 +166,43 @@
 							</td>
 						</tr>
                         <tr>
-							<td class="user-id">
+							<td class="cat-id">
+							   3
+							</td>
+							<td class="cat-name">
+							   Lorem ipsum
+							</td>
+							<td class="cat-description">
+							   Lorem ipsum
+							</td>
+                            <td class="edit">
+							   <div class="btn">
+								  <i class="fa fa-pencil" aria-hidden="true">
+									  <span class="delete-span">
+									  Edytuj
+									  </span>
+								  </i>
+							   </div>
+							</td>
+							<td class="delete">
+							   <div class="btn">
+								  <i class="fa fa-times" aria-hidden="true">
+									  <span class="delete-span">
+									  Usuń
+									  </span>
+								  </i>
+							   </div>
+							</td>
+						</tr>
+                        <tr>
+							<td class="cat-id">
 							   4
 							</td>
-							<td class="user-firstname">
-							   Brad
+							<td class="cat-name">
+							   Lorem ipsum
 							</td>
-							<td class="user-lastname">
-							   Pitt
-							</td>
-                            <td class="user-email">
-							   bradp@gmail.com
-							</td>
-                            <td class="user-status">
-							   0
+							<td class="cat-description">
+							   Lorem ipsum
 							</td>
                             <td class="edit">
 							   <div class="btn">

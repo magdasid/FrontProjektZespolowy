@@ -170,11 +170,16 @@ input {
 .add-span {
     margin-bottom: 1%;
 }
+.edit-btn {
+	cursor: pointer;
+}
+.delete-span {
+	font-family: Arial;
+}
 .add-span a {
    text-decoration: none;
     color: white;
 }
-
 /* mobile version */
 @media screen and (max-width: 800px) {
     ul.sidenav {

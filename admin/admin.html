@@ -1,91 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-		<title>Stos Przepełniony</title>
-		<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="jquery-1.12.3.min.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
-		<link rel="stylesheet" type="text/css" href="adminstyle.css">
-	</head>
-    <body>
-        <div class="admin_container">
-            <div class="label">
-                <div  class="logo-img">
-                    <img src="logo.png">
-                </div>
-                <div class="admin-info">
-                    <div id="admin-name">
-                        Natalia Kurek
-                    </div>
-                    <div class="admin-icon">
-                        <i class="fa fa-user-circle" aria-hidden="true"></i>
-                    </div>
-                </div>
+   <head>
+      <title>Stos Przepełniony</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="adminStyle.css">    
+   </head>
+   <body>
+      <div class="admin_container">
+          <div class="label">
+            <div class="logo-img">
+               <img src="logo.png" alt="img1">
             </div>
-            <ul class="sidenav">
-                <li><a class="active" href="#home"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-                <li><a href="#news"><i class="fa fa-user-circle" aria-hidden="true"></i>Admini</a></li><li><a href="#contact"><i class="fa fa-th-list" aria-hidden="true"></i>Kategorie</a></li>
-                <li><a href="#about"><i class="fa fa-users" aria-hidden="true"></i>Użytkownicy</a></li>
-                <li><a href="#about"><i class="fa fa-file-text-o" aria-hidden="true"></i>Ogłoszenia</a></li>
-                <li><a href="#about"><i class="fa fa-th" aria-hidden="true"></i>Dostęp</a></li>
-                <li><a href="#about"><i class="fa fa-arrows" aria-hidden="true"></i>Akcje</a></li>
-            </ul>
-            <div class="content">
-				<div class="container">
-					<table>
-						<thead>
-							<tr>
-								<th scope="col">id</th>
-								<th scope="col">imię</th>
-								<th scope="col">nazwisko</th>
-								<th scope="col">permission</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="admin_id">1</td>
-								<td class="admin_name">John</td>
-								<td class="admin_surname">Smith</td>
-								<td class="admin_permission">bla bla</td>
-							</tr>
-							 <tr>
-								<td class="admin_id">1</td>
-								<td class="admin_name">John</td>
-								<td class="admin_surname">Smith</td>
-								<td class="admin_permission">bla bla</td>
-							</tr>
-							 <tr>
-								<td class="admin_id">1</td>
-								<td class="admin_name">John</td>
-								<td class="admin_surname">Smith</td>
-								<td class="admin_permission">bla bla</td>
-							</tr>
-							 <tr>
-								<td class="admin_id">1</td>
-								<td class="admin_name">John</td>
-								<td class="admin_surname">Smith</td>
-								<td class="admin_permission">bla bla</td>
-							</tr>
-							 <tr>
-								<td class="admin_id">1</td>
-								<td class="admin_name">John</td>
-								<td class="admin_surname">Smith</td>
-								<td class="admin_permission">bla bla</td>
-							</tr>
-							 <tr>
-								<td class="admin_id">1</td>
-								<td class="admin_name">John</td>
-								<td class="admin_surname">Smith</td>
-								<td class="admin_permission">bla bla</td>
-							</tr>
-							
-						</tbody>
-					</table>
+             <div class="admin-logout">
+                 <a href="#"><i class="fa fa-power-off" aria-hidden="true"></i> wyloguj się</a>
+             </div>
+          </div>
+         </div>
+         <ul class="sidenav">
+              <div id="admin-info">
+                     <div id="icon">
+                         <i class="fa fa-user-circle" aria-hidden="true"></i>
+                     </div>
+                     Madzia
+                     <div id="info">
+                         <label>
+                             admin
+                         </label>
+                     </div>
+                     <div class="admin-logout2">
+                        <a href="#"><i class="fa fa-power-off" aria-hidden="true"></i> wyloguj się</a>
+                    </div>
+                 </div> 
+             <li>
+               <a href="#home">
+               <i class="fa fa-home" aria-hidden="true"></i>
+               Home
+               </a>
+            </li>
+            <li>
+               <a href="admin.html" class="active">
+               <i class="fa fa-user-circle" aria-hidden="true"></i>
+               Administratorzy
+               </a>
+            </li>
+            <li>
+               <a href="categories.html">
+               <i class="fa fa-th-list" aria-hidden="true"></i>
+               Kategorie
+               </a>
+            </li>
+            <li>
+               <a href="users.html">
+               <i class="fa fa-users" aria-hidden="true"></i>
+               Użytkownicy
+               </a>
+            </li>
+            <li>
+               <a href="advertisments.html">
+               <i class="fa fa-file-text-o" aria-hidden="true"></i>
+               Ogłoszenia
+               </a>
+            </li>
+            <li>
+               <a href="access.html">
+               <i class="fa fa-th" aria-hidden="true"></i>
+               Dostęp
+               </a>
+            </li>
+            <li>
+               <a href="actions.html">
+               <i class="fa fa-arrows" aria-hidden="true"></i>
+               Akcje
+               </a>
+            </li>
+         </ul>
+         <div class="content">
+            <div class="container">
+				<h2>Lista administratorów</h2>
+                <div class="btn add-btn">
+					<i class="fa fa-plus" aria-hidden="true"></i>
+						<span class="add-span">
+                            <a href="addAdmin.html">Dodaj administratora</a>
+						</span>
+					</i>
 				</div>
+               <table id="ads-list">
+                  <thead>
+                     <tr>
+                        <th scope="col">
+                           admin id
+                        </th>
+                        <th scope="col">
+                           user id
+                        </th>
+                         <th scope="col">
+                           first name
+                        </th>
+                        <th scope="col">
+                           last name
+                        </th>
+                         <th scope="col">
+                           permission
+                        </th>
+                         <th scope="col">
+                           edit
+                        </th>
+                        <th scope="col">
+                           delete
+                        </th>
+                     </tr>
+                  </thead>
+					<tbody>
+						<tr>
+							<td class="admin-id">
+                                1
+							</td>
+							<td class="user-id">
+							   3
+							</td>
+							<td class="admin-firstname">
+							   <a href="adminList.html">
+									Arnold
+								</a>
+							</td>
+                            <td class="admin-lastname">
+								<a href="adminList.html">
+									Schwarzeneger
+								</a>
+							</td>
+                            <td class="admin-permissionname">
+							   xxx
+							</td>
+                            <td class="edit">
+							   <div class="btn">
+								  <i class="fa fa-pencil" aria-hidden="true">
+									  <span class="delete-span">
+									  Edytuj
+									  </span>
+								  </i>
+							   </div>
+							</td>
+							<td class="delete">
+							   <div class="btn">
+								  <i class="fa fa-times" aria-hidden="true">
+									  <span class="delete-span">
+									  Usuń
+									  </span>
+								  </i>
+							   </div>
+							</td>
+						</tr>
+						 <tr>
+							<td class="admin-id">
+							   2
+							</td>
+							<td class="user-id">
+							   5
+							</td>
+							<td class="admin-firstname">
+								<a href="adminList.html">
+									Morgan
+								</a>
+							</td>
+                            <td class="admin-lastname">
+								<a href="adminList.html">
+									Freeman
+								</a>
+							</td>
+                            <td class="admin-permissionname">
+							   xxx
+							</td>
+                            <td class="edit">
+							   <div class="btn">
+								  <i class="fa fa-pencil" aria-hidden="true">
+									  <span class="delete-span">
+									  Edytuj
+									  </span>
+								  </i>
+							   </div>
+							</td>
+							<td class="delete">
+							   <div class="btn">
+								  <i class="fa fa-times" aria-hidden="true">
+									  <span class="delete-span">
+									  Usuń
+									  </span>
+								  </i>
+							   </div>
+							</td>
+						</tr>
+                       <tr>
+							<td class="admin-id">
+							   3
+							</td>
+							<td class="user-id">
+							   7
+							</td>
+							<td class="admin-firstname">
+								<a href="adminList.html">
+									Kevin	
+								</a>
+							</td>
+                            <td class="admin-lastname">
+								<a href="adminList.html">
+									Spacey
+								</a>
+							</td>
+                            <td class="admin-permissionname">
+							   xxx
+							</td>
+                            <td class="edit">
+							   <div class="btn">
+								  <i class="fa fa-pencil" aria-hidden="true">
+									  <span class="delete-span">
+									  Edytuj
+									  </span>
+								  </i>
+							   </div>
+							</td>
+							<td class="delete">
+							   <div class="btn">
+								  <i class="fa fa-times" aria-hidden="true">
+									  <span class="delete-span">
+									  Usuń
+									  </span>
+								  </i>
+							   </div>
+							</td>
+						</tr>
+                        <tr>
+							<td class="admin-id">
+							   4
+							</td>
+							<td class="user-id">
+							   2
+							</td>
+							<td class="admin-firstname">
+								<a href="adminList.html">
+									Matt
+							   </a>
+							</td>
+                            <td class="admin-lastname">
+								<a href="adminList.html">
+									Damon
+								</a>
+							</td>
+                            <td class="admin-permissionname">
+							   xxx
+							</td>
+                            <td class="edit">
+							   <div class="btn">
+								  <i class="fa fa-pencil" aria-hidden="true">
+									  <span class="delete-span">
+									  Edytuj
+									  </span>
+								  </i>
+							   </div>
+							</td>
+							<td class="delete">
+							   <div class="btn">
+								  <i class="fa fa-times" aria-hidden="true">
+									  <span class="delete-span">
+									  Usuń
+									  </span>
+								  </i>
+							   </div>
+							</td>
+						</tr>
+					</tbody>
+               </table>
             </div>
-        </div>
-    </body>
+         </div>
+      </div>
+   </body>
 </html>
