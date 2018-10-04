@@ -1,2 +1,2 @@
 # Projekt Zespołowy 
-Widoki do zaliczeniowego projektu zespołowego 
+Widoki do zaliczeniowego projektu zespołowego.  
